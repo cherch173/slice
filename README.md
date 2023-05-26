@@ -92,12 +92,12 @@ For **Authentication and Authorization** purposes we'll be using OAuth to avoid 
     - [X] Install Mongoose 
     - [X]  Enter DATABASE URL to .env
     - [X] Create Models, Views & Controller Directories for Pizzerias
-    - [] Begin Pizzerias Routing
-    - [] Create first Database entries with Node & MongoDB 
+    - [X] Begin Pizzerias Routing
+    - [X] Create first Database entries with Node & MongoDB 
 
 - Monday: 
-    - [] Models (Pizzeria): Generate Schemas and Database
-    - [] New (MVC)
+    - [X] Models (Pizzeria): Generate Schemas and Database
+    - [X] New (MVC)
     - [] Reviews (MVC) & 
     - [] Show Functionality
 - Tuesday: 
