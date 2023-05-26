@@ -8,7 +8,7 @@ module.exports = {
 
 function index(req, res) {
     res.render('pizzerias/index', {
-        pizzerias: Pizzeria.findById()
+        pizzerias: Pizzeria.find()
     })
 }
 
