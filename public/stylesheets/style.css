@@ -12,7 +12,7 @@ a {
 }
 
 h2 {
-  color: whitesmoke;
+  color: crimson;
   text-shadow: -.25px .25px whitesmoke, -.5px .5px black;
   font-size: 28px;
 }
@@ -22,5 +22,5 @@ h5 {
 }
 
 footer {
-  font-size: 12px;
+  font-size: 10px;
 }

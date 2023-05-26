@@ -89,7 +89,8 @@ For **Authentication and Authorization** purposes we'll be using OAuth to avoid 
     - [X] Install node packages
     - [X] Install dotenv & create gitIgnore to ensure safety
     - [X] Begin EJS Partials and Index Views
-    - [X] Install Mongoose and enter DATABASE URL to .env
+    - [X] Install Mongoose 
+    - [X]  Enter DATABASE URL to .env
     - [X] Create Models, Views & Controller Directories for Pizzerias
     - [] Begin Pizzerias Routing
     - [] Create first Database entries with Node & MongoDB 
