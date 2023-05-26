@@ -3,13 +3,14 @@ body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-color: whitesmoke;
-  /* background-image: url(https://media.licdn.com/dms/image/C5622AQFmF4tfuXMNpw/feedshare-shrink_2048_1536/0/1666103725012?e=1687996800&v=beta&t=GuwawuRSuWxO6JFoyL2RXpcr-ngcKdAICIOKVMUNj80); */
-  /* color: whitesmoke; */
 }
 
 a {
   color:crimson;
-  font-size: 13px;
+}
+
+a:hover {
+  color: darkred;
 }
 
 h2 {
@@ -40,4 +41,18 @@ tbody {
 
 footer {
   font-size: 10px;
+}
+
+button {
+  border: 1px solid firebrick;
+  color: firebrick;
+  font-size: 14px;
+  border-radius: 6%;
+}
+
+button:hover {
+  background-color: rgb(231, 143, 128);
+  color: whitesmoke;
+  transform: scale(1.13);
+  transition: transform 142ms ease-in;
 }
