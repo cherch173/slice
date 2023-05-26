@@ -6,6 +6,7 @@ const pizzeriaSchema = new Schema({
     address: String,
     openTil: String,
     vegan: Boolean,
+    rating: Number
     // reviews: [reviewsSchema]
 }, {
     timestamps: true
