@@ -2,7 +2,7 @@
 ####
 _NYC's very own definitive Pizza Power Rankings_
 
-![Image](https://media.tenor.com/X2xUUHbZrXMAAAAC/pizza-party.gif)
+![Image](public/images/renAndStimpyPizza.gif)
 
 #### Written by Brian Cherchiglia
 #### Published by Cherch
@@ -22,7 +22,7 @@ This is the _official_ end to the argument.
 
 ***
 ### _**CONCEPT**_
-![Image](https://media.tenor.com/-lohISybXxoAAAAC/spongebob-the-krusty-krab-pizza.gif)
+![Image](public/images/spongebobKrustyKrabPizza.gif)
 
 Using Express, most of this can already be accomplished using a simple **Models, Views, Controllers** setup.
 
@@ -109,7 +109,8 @@ For **Authentication and Authorization** purposes we'll be using OAuth to avoid 
     - [] Final Testing Phase
     - [] Deploy
 
-![Image](https://media.tenor.com/6omVw7_jl7AAAAAC/tmnt-michelangelo.gif)
+
+![Image](public/images/tmntMichelangeloPizza.gif)
 
 ***
 ***
