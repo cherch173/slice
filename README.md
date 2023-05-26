@@ -65,10 +65,14 @@ We'll use **SHOW Functionality** to bring our most popular pizzerias to the home
 ***
 ## **_WIREFRAME_**
 
-![Image](public/images/wireframe.jpg)
+![Image](public/images/wireframe2.jpg)
 
-Simplicity is _everything._
 
+
+***
+
+## **_ERD_**
+![Image](public/images/sliceERD.png)
 ***
 ***
 ## **_PROJECT FLOW_**
