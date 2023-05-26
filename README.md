@@ -91,9 +91,11 @@ For **Authentication and Authorization** purposes we'll be using OAuth to avoid 
     - [X] Begin EJS Partials and Index Views
     - [X] Install Mongoose and enter DATABASE URL to .env
     - [X] Create Models, Views & Controller Directories for Pizzerias
+    - [] Begin Pizzerias Routing
+    - [] Create first Database entries with Node & MongoDB 
 
 - Monday: 
-    - [] Generate Schemas and Database
+    - [] Models (Pizzeria): Generate Schemas and Database
     - [] New (MVC)
     - [] Reviews (MVC) & 
     - [] Show Functionality
