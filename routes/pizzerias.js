@@ -1,9 +1,10 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
-});
+const pizzeriasCtrl = require('../controllers/pizzerias');
+
+// GET pizzerias/new
+router.get('/new', pizzeriasCtrl.new);
+
 
 module.exports = router;
