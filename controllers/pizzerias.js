@@ -16,7 +16,7 @@ async function create(req, res) {
     // switches the vegan checkbox on and off
     // to yasss or nah
     req.body.vegan = !!req.body.vegan;
-    // for (let key in req.body) {
+    for (let key in req.body) {
         if (req.body[key] === '') delete req.body[key];
         try {
             await Pizzeria.create(req.body);
@@ -24,10 +24,10 @@ async function create(req, res) {
             res.redirect('/pizzerias');
         } catch (err) {
             console.log(err);
-            res.render('/pizzerias/new', { errorMsg: err.message})
+            res.render('pizzerias/new', { errorMsg: err.message})
         }
     }
-// }
+}
 
 function newPizzeria(req, res) {
     res.render('pizzerias/new', { errorMsg: ''});
