@@ -1,15 +1,19 @@
 var express = require('express');
 var router = express.Router();
 
+// pizzeria controller module
 const pizzeriasCtrl = require('../controllers/pizzerias');
 
-// GET pizzerias/new
+// all Routes DEFAULT to .movies
+
+// GET Route for pizzerias/new
 // create the mere existence of
 // a new pizzeria to Slice
 router.get('/new', pizzeriasCtrl.new);
-// POST /pizzerias
+
+// POST Route for /pizzerias
 // add newly created pizzeria to /pizzerias
-router.post('./', pizzeriasCtrl.create);
+router.post('/', pizzeriasCtrl.create);
 
 
 module.exports = router;

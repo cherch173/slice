@@ -6,7 +6,6 @@ module.exports = {
 };
 
 async function create(req, res) {
-    const pizzerias = 
     // switches the vegan checkbox on and off
     // to yasss or nah
     req.body.vegan = !!req.body.vegan;
@@ -15,7 +14,7 @@ async function create(req, res) {
         try {
             await Pizzeria.create(req.body);
             //REDIRECT now that we've CRUD'd Data
-            res.redirect('/pizzerias');
+            res.redirect('/pizzerias/new');
         } catch (err) {
             console.log(err);
             res.render('/pizzerias/new', { errorMsg: err.message})

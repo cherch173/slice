@@ -10,7 +10,7 @@ require('dotenv').config();
 require('./config/database');
 
 var indexRouter = require('./routes/index');
-var pizzeriasRouter = require('./routes/pizzerias');
+var pizerriasRouter = require('./routes/pizzerias');
 
 var app = express();
 
@@ -25,7 +25,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/pizzerias', pizzeriasRouter);
+app.use('/pizzerias', pizerriasRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
