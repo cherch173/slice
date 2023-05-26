@@ -1,26 +1,39 @@
 <%- include('../partials/header') %>
 
-<h5>Add a New Pizzeria</h5>
+<h5>Add a <span style="color: firebrick">New Pizzeria</span> to Slice</h5>
 <form action="/pizzerias" method="POST">
   <label>Name:
     <input type="text" name="name">
   </label><br>
-  <label>Address:
-    <input type="text" name="address">
-  </label><br>
+  <label>Borough:
+    <select name="borough">
+      <option value="Bronx">The Bronx</option>
+      <option value="Brooklyn" selected>Brooklyn</option>
+      <option value="Manhattan">Manhattan</option>
+      <option value="Queens">Queens</option>
+      <option value="Staten Island">Staten Island</option>
+      <option value="Long Island">Long Island</option>
+      <option value="Westchester">Westchester</option>
+      <option value="Jers">Jers</option>
+      <option value="Connecticut">Connecticut</option>
+    </select>
+    </label><br>
+    <label>Address:
+      <input type="text" name="address">
+    </label><br>
   <label>Open Til:
-    <input type="text" name="openTil">
+    <input type="time" name="openTil">
   </label><br>
   <label>Vegan Friendly?
     <input type="checkbox" name="vegan" checked>
   </label><br>
   <label>Rating
     <select name="rating">
-      <option value="1">1</option>
+      <option value="1">1 (nah i'm good)</option>
       <option value="2">2</option>
       <option value="3" selected>3</option>
       <option value="4">4</option>
-      <option value="5">5</option>
+      <option value="5">5 (holy shit)</option>
     </select>
   </label><br><br>
   <button type="submit">Add Pizzeria</button>
