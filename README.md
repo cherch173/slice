@@ -14,7 +14,7 @@ _NYC's very own definitive Pizza Power Rankings_
 ***
 ***
 ## _**Description**_
-The _**official**_ end to the argument.
+This... is the _**official**_ end to the argument.
 
 **Slice** is designed to allow New York to speak for itself, amongst itself about what it _allegedly_ knows best: Pizza.
 
