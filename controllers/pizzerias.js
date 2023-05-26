@@ -6,6 +6,7 @@ module.exports = {
 };
 
 async function create(req, res) {
+    const pizzerias = 
     // switches the vegan checkbox on and off
     // to yasss or nah
     req.body.vegan = !!req.body.vegan;

@@ -9,7 +9,7 @@ const pizzeriasCtrl = require('../controllers/pizzerias');
 router.get('/new', pizzeriasCtrl.new);
 // POST /pizzerias
 // add newly created pizzeria to /pizzerias
-router.post('/', pizzeriasCtrl.create);
+router.post('./', pizzeriasCtrl.create);
 
 
 module.exports = router;
