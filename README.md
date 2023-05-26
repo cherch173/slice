@@ -1,6 +1,6 @@
 # **SLICE**
 ####
-_NYC's own Definitive Pizza Ranking Site_
+_NYC's very own definitive Pizza Power Rankings_
 
 ![Image](https://media.tenor.com/X2xUUHbZrXMAAAAC/pizza-party.gif)
 
@@ -14,7 +14,7 @@ _NYC's own Definitive Pizza Ranking Site_
 ***
 ***
 ## _**Description**_
-The _official_ end to the argument.
+The _**official**_ end to the argument.
 
 **Slice** is designed to allow New York to speak for itself, amongst itself about what it _allegedly_ knows best: Pizza.
 
@@ -47,19 +47,26 @@ The home page (INDEX) will be very important for simplistic design.
 Using EJS Partials I'll embed links at the top of the each page to create a uniform & familiar layout as we navigate between our three branch directories:
 
 - All Pizzerias (Index)
-- Pizzeria Details
-- New Pizzeria
+- Pizzeria Details (Reviews)
+- New Pizzeria (New)
 
-Much like our mongoose-movies exercise, I plan to implement a user-based rating (**reviews**) system where we use a 1-5 Rating method to determine which pizzeria _is_ in fact the best in NYC (via each user review).
+Much like our mongoose-movies exercise, I plan to implement a user-based rating (**reviews**) system where we use a 1-5 scale to determine which pizzeria _is_ in fact the best in NYC. The numeric rating will be required: true, while text comments won't be required.
 
-Through the Pizzeria's Schema, USERS will be able to contribute to a small array of data that will be visible when they SELECT a Pizzeria:
-- name : string
-- address : string
-- openTil : time
-- vegan / gluten-free: a true / false boolean (much like onTime from mongoose-flights)
-- rating : number
+Through the **pizzeriaSchema**, USERS will be able to contribute to a small array of data that will be visible when they SELECT a Pizzeria:
+- name: String
+- address: String
+- openTil : Time
+- vegan / gluten-free: Boolean
+- reviews: [reviewsSchema]
 
-We'll use **SHOW Functionality** to bring our most popular pizzerias to the home page (INDEX). 
+The **reviewSchema** will be simplistic, carrying only the following crtieria:
+- rating: Number
+- review: Text
+- totalRating: Number
+
+We'll use **SHOW Functionality** to bring active and recently added pizzerias to the home page (INDEX).
+
+For **Authentication and Authorization** purposes we'll be using OAuth to avoid having to store internal user data.  It will also allow us to hide certain features (i.e. the ability to rate a pizzeria) unless the user is logged in.
 
 ***
 ***
