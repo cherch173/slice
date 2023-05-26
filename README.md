@@ -108,9 +108,10 @@ For **Authentication and Authorization** purposes we'll be using OAuth to avoid 
     - [] Aesthetics (CSS & Bootstrap)
     - [] Final Testing Phase
     - [] Deploy
+***
+***
 
-
-![Image](public/images/tmntMichelangeloPizza.gif)
+![Image](public/images/shaqPizza.gif)
 
 ***
 ***
@@ -119,3 +120,4 @@ For **Authentication and Authorization** purposes we'll be using OAuth to avoid 
 ##### Spongebob Krusty Krab Pizza Gif: [Tenor](https://media.tenor.com/-lohISybXxoAAAAC/spongebob-the-krusty-krab-pizza.gif)
 ##### Homer Simpson Gif: [Gifer](ttps://i.gifer.com/IPR.gif)
 ##### Michaelangelo Gif: [Tenor](https://media.tenor.com/6omVw7_jl7AAAAAC/tmnt-michelangelo.gif)
+##### Shaq Gif [LinkedIN](https://media.licdn.com/dms/image/C5622AQFmF4tfuXMNpw/feedshare-shrink_2048_1536/0/1666103725012?e=1687996800&v=beta&t=GuwawuRSuWxO6JFoyL2RXpcr-ngcKdAICIOKVMUNj80)
