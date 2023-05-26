@@ -1,6 +1,27 @@
-<%- include('./partials/header') %>
-<h3> Wellllllcome to <%= title %> </h3>
-<div></div>
-<br>
-<div></div>
-<%- include('./partials/footer') %>
+<%- include('../partials/header') %>
+
+<h3>The Whole Pie (all pizzerias)</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Name |</th>
+      <th>Borough |</th>
+      <th>Address |</th>
+      <th>Open Til |</th>
+      <th>Got Vegan? |</th>
+      <th>Rating</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Carmine's</td>
+      <td>Brooklyn</td>
+      <td>258 Graham Ave</td>
+      <td>9:15pm</td>
+      <td>Yasss</td>
+      <td>4.8</td>
+    </tr>
+  </tbody>
+</table>
+
+<%- include('../partials/footer') %>

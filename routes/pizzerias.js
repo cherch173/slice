@@ -15,5 +15,9 @@ router.get('/new', pizzeriasCtrl.new);
 // add newly created pizzeria to /pizzerias
 router.post('/', pizzeriasCtrl.create);
 
+// GET Route for /pizzerias (Index Route)
+router.get('/', pizzeriasCtrl.index);
+
+
 
 module.exports = router;

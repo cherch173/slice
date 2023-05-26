@@ -17,6 +17,12 @@ h2 {
   font-size: 28px;
 }
 
+h3 {
+  color: rgb(218, 63, 94);
+  text-shadow: -.25px .25px whitesmoke, -.5px .5px black;
+  font-size: 20px;
+}
+
 h5 {
   font-size: 14px;
 }
