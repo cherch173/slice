@@ -1,8 +1,26 @@
 body {
+  height: 100vh;
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  /* background-image: url(https://media.licdn.com/dms/image/C5622AQFmF4tfuXMNpw/feedshare-shrink_2048_1536/0/1666103725012?e=1687996800&v=beta&t=GuwawuRSuWxO6JFoyL2RXpcr-ngcKdAICIOKVMUNj80); */
+  /* color: whitesmoke; */
 }
 
 a {
   color: #00B7FF;
+  font-size: 12px;
+}
+
+h2 {
+  color: whitesmoke;
+  text-shadow: -.25px .25px whitesmoke, -.5px .5px black;
+  font-size: 28px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+footer {
+  font-size: 12px;
 }
