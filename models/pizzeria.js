@@ -10,9 +10,9 @@ const pizzeriaSchema = new Schema({
     address: String,
     openTil: String,
     vegan: Boolean,
-    rating: {type: Number,
-    required: true},
-    // reviews: [reviewsSchema]
+    rating: {type: String,
+    enum: ['1', '2', '3', '4', '5'],
+    required: true}
 }, {
     timestamps: true
 });

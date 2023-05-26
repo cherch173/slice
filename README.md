@@ -98,6 +98,8 @@ For **Authentication and Authorization** purposes we'll be using OAuth to avoid 
 - Monday: 
     - [X] Models (Pizzeria): Generate Schemas and Database
     - [X] New (MVC)
+    - [X] Prove MongoDB is accepting new Data via Models by checking Atlas itself
+    - [] Render NEW Pizzerias to INDEX (All Pizzerias)
     - [] Reviews (MVC) & 
     - [] Show Functionality
 - Tuesday: 
