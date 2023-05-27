@@ -10,8 +10,7 @@ const pizzeriaSchema = new Schema({
     address: String,
     openTil: String,
     vegan: Boolean,
-    rating: {type: String,
-    enum: ['1', '2', '3', '4', '5'],
+    rating: {type: Number,
     required: true}
 }, {
     timestamps: true

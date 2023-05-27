@@ -6,11 +6,10 @@ module.exports = {
     index
 };
 
-function index(req, res) {
-    res.render('pizzerias/index', {
-        pizzerias: Pizzeria.find()
-    })
-}
+async function index(req, res) {
+    const pizzerias = await Pizzeria.find({});
+    res.render('pizzerias/index', { title: 'The Whole Pie', pizzerias})
+}    
 
 async function create(req, res) {
     // switches the vegan checkbox on and off
@@ -19,7 +18,7 @@ async function create(req, res) {
     for (let key in req.body) {
         if (req.body[key] === '') delete req.body[key];
         try {
-            await Pizzeria.create(req.body);
+            const pizzeria = await Pizzeria.create(req.body);
             //REDIRECT now that we've CRUD'd Data
             res.redirect('/pizzerias');
         } catch (err) {
