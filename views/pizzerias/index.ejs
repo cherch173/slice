@@ -10,6 +10,7 @@
               <th>BOROUGH</th>
               <th>ADDRESS</th>
               <th>VEGAN FRIENDLY?</th>
+              <th>DETAILS & REVIEWS</th>
           </tr>
       </thead>
 
@@ -21,12 +22,15 @@
               <td><%= pizzeria.borough %></td>
               <td><%= pizzeria.address %></td>
               <td><%= pizzeria.vegan ? 'Yasss' : 'Nah' %></td>
+              <td><a href="/pizzerias/<%= pizzeria._id %>">[More Info]</a></td>
+
           </tr>
           <% }) %>    
       </tbody>
   </table>
 </section>
 
+  <tbody>
 
 <%- include('../partials/footer') %>
 
