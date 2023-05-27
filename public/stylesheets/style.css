@@ -54,5 +54,6 @@ button:hover {
   background-color: rgb(231, 143, 128);
   color: whitesmoke;
   transform: scale(1.13);
-  transition: transform 142ms ease-in;
+  transition: transform 173ms ease-in;
+  border-radius: 12%;
 }
