@@ -6,10 +6,10 @@
     <tr>
       <th>Name</th>
       <th>Borough</th>
-      <th>Address</th>
+      <!-- <th>Address</th> -->
       <th>Open Until</th>
-      <th>Got Vegan?</th>
-      <th>Rating</th>
+      <th>Vegan (GF) Friendly?</th>
+      <!-- <th>Rating</th> -->
     </tr>
   </thead>
 
@@ -20,10 +20,8 @@
     <tr>
     <td> <% p.name %> </td>
     <td> <% p.borough %> </td>
-    <td> <% p.address %> </td>
     <td> <% p.openTil %> </td>
     <td> <% p.vegan ? "Yasss" : "Nah" %> </td>
-    <td> <% p.rating %> </td>
     <td><a href="/pizzerias/<%= p._id %>">[More Info]</a></td>
 
     </tr>

@@ -3,8 +3,14 @@ const Pizzeria = require('../models/pizzeria');
 module.exports = {
     new: newPizzeria,
     create,
-    index
+    index,
+    show
 };
+
+async function show(req, res) {
+    const pizzeria = await Pizzeria.findById(req.params.id);
+    res.render('pizzerias/show', { title: 'Pizzeria Detail', pizzeria });
+  }
 
 async function index(req, res) {
     const pizzerias = await Pizzeria.find({});
