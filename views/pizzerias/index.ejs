@@ -14,16 +14,27 @@
   </thead>
 
   <tbody>
- 
-    
+    <!-- GET THIS WORKIN BUD -->
+    <% pizzerias.forEach(async function(p) { %>
+      <% console.log(pizzerias) %>
     <tr>
+    <td> <% p.name %> </td>
+    <td> <% p.borough %> </td>
+    <td> <% p.address %> </td>
+    <td> <% p.openTil %> </td>
+    <td> <% p.vegan ? "Yasss" : "Nah" %> </td>
+    <td> <% p.rating %> </td>
+    </tr>
+  <% }) %>    
+    
+    <!-- <tr>
       <td>Carmine's</td>
        <td>Brooklyn</td>
        <td>358 Graham Ave</td>
        <td>9:15pm</td>
        <td>Yasss</td>
        <td>4.8</td>
-     </tr>
+     </tr> -->
   </tbody>
 </table>
 
