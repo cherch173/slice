@@ -1,15 +1,30 @@
 <%- include('../partials/header') %>
 
 <section id="show-page">
-  <div>Name: 
-    <%= pizzeria.name %></div>
-  <div>Borough: <%= pizzeria.borough %></div>
-  <div>Address: <%= pizzeria.address %></div>
-  <div>Vegan (GF) Friendly? <%= pizzeria.vegan ? 'Yasss' : 'Nah' %></div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>NAME</th>
+                <th>BOROUGH</th>
+                <th>ADDRESS</th>
+                <th>VEGAN FRIENDLY?</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td><%= pizzeria.name %></td>
+                <td><%= pizzeria.borough %></td>
+                <td><%= pizzeria.address %></td>
+                <td><%= pizzeria.vegan ? 'Yasss' : 'Nah' %></td>
+            </tr>
+        </tbody>
+    </table>
 </section>
 
 <!-- NEW HTML STUFF for REVIEWS FORM -->
-<br><br><h2>Reviews</h2>
+<br><br><h3>Reviews</h3>
 <form id="add-review-form" method="POST"
   action="/pizzerias/<%= pizzeria._id %>/reviews">
   <label>Review:</label>

@@ -1,42 +1,32 @@
 <%- include('../partials/header') %>
 
 <h3>The Whole Pie (all pizzerias)</h3>
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Borough</th>
-      <!-- <th>Address</th> -->
-      <th>Open Until</th>
-      <th>Vegan (GF) Friendly?</th>
-      <!-- <th>Rating</th> -->
-    </tr>
-  </thead>
+<section id="index-page">
 
-  <tbody>
-    <!-- GET THIS WORKIN BUD -->
-    <% pizzerias.forEach((p) => { %>
-      <% console.log(p) %>
-    <tr>
-    <td> <% p.name %> </td>
-    <td> <% p.borough %> </td>
-    <td> <% p.openTil %> </td>
-    <td> <% p.vegan ? "Yasss" : "Nah" %> </td>
-    <td><a href="/pizzerias/<%= p._id %>">[More Info]</a></td>
+  <table>
+      <thead>
+          <tr>
+              <th>NAME</th>
+              <th>BOROUGH</th>
+              <th>ADDRESS</th>
+              <th>VEGAN FRIENDLY?</th>
+          </tr>
+      </thead>
 
-    </tr>
-  <% }) %>    
-    
-    <!-- <tr>
-      <td>Carmine's</td>
-       <td>Brooklyn</td>
-       <td>358 Graham Ave</td>
-       <td>9:15pm</td>
-       <td>Yasss</td>
-       <td>4.8</td>
-     </tr> -->
-  </tbody>
-</table>
+      <tbody>
+        <% pizzerias.forEach((pizzeria) => { %>
+          <% console.log(pizzeria) %>
+          <tr>
+              <td><%= pizzeria.name %></td>
+              <td><%= pizzeria.borough %></td>
+              <td><%= pizzeria.address %></td>
+              <td><%= pizzeria.vegan ? 'Yasss' : 'Nah' %></td>
+          </tr>
+          <% }) %>    
+      </tbody>
+  </table>
+</section>
+
 
 <%- include('../partials/footer') %>
 
