@@ -29,5 +29,5 @@ async function create(req, res) {
 }
 
 function newPizzeria(req, res) {
-    res.render('pizzerias/new', { errorMsg: ''});
+    res.render('pizzerias/new', { title: 'Add a New Pizzeria to Slice', errorMsg: '' });
 }
