@@ -18,6 +18,8 @@ const reviewSchema = new Schema({
       ref: 'User',
       required: true
     },  
+    userName: String,
+    userAvatar: String
   }, {
     timestamps: true
   });
