@@ -5,7 +5,8 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 // Session Middleware
-var session = require('express-session');
+const session = require('express-session');
+const passport = require('passport');
 
 // dotenv configured for security
 require('dotenv').config();
@@ -26,11 +27,17 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+// Session Middleware
 app.use(session({
   secret: process.env.SECRET,
   resave: false,
   saveUninitialized: true
 }));
+// Mount Passport Middleware
+app.use(passport.initialize());
+app.use(passport.session());
+// ends middleware stuff 
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);

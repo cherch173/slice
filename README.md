@@ -108,6 +108,7 @@ For **Authentication and Authorization** purposes we'll be using OAuth to avoid 
     - [] Authentication/ Authorizaation OAuth
     - [X] Create Google API Credentials
     - [X] Install Express Session Middleware
+    - [X] Install Passport
     - [] Delete Reviews Functionality
     - [] ratingsTotal composed
     - [] ratingsTotal displaying
