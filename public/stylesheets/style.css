@@ -5,13 +5,12 @@ body {
   background-color: whitesmoke;
 }
 
-
-
 nav {
   height: 30px;
   width: cover;
   font-size: 18px;
   cursor: pointer;
+  border-radius: 2%;
 }
 
 body > nav {
@@ -24,7 +23,6 @@ body > nav {
   border: 2px double firebrick;
 }
 
-
 a {
   color:crimson;
 }
@@ -34,7 +32,8 @@ nav:hover {
 }
 
 a:hover {
-  color: rgba(245, 245, 245, 1);
+  color: whitesmoke;
+  text-shadow: -.25px .25px black;
 }
 
 nav > a:hover {
