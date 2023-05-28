@@ -36,7 +36,8 @@ a:hover {
 }
 
 nav > a:hover {
-  color: rgba(111, 0, 0, .86);
+  color:firebrick;
+  font-size: 18px;
 
 }
 
@@ -138,5 +139,10 @@ button:hover {
 }
 
 footer {
-  font-size: 10px;
+  font-size: 12px;
+}
+
+footer > a:hover {
+  color: firebrick;
+  font-size: 13px;
 }
