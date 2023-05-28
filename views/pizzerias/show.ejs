@@ -10,8 +10,7 @@
               <th>ADDRESS</th>
               <th>OPEN TIL</th>
               <th>VEGAN FRIENDLY?</th>
-              <th style="background-color: whitesmoke;"></th>
-              <th>RATING</th>
+              <!-- <th style="background-color: whitesmoke;"></th> -->
             </tr>
           </thead>
 
@@ -22,17 +21,29 @@
                 <td style="font-size: 16px"><%= pizzeria.address %></td>
                 <td style="font-size: 16px"><%= pizzeria.openTil %></td>
                 <td style="font-size: 16px"><%= pizzeria.vegan ? 'Yasss' : 'Nah' %></td>
-              <% let total = 0 %>
-              <% pizzeria.reviews.forEach(function(r) { %>
-              <% total += r.rating %>
-                <td>
-                  <strong><%= (total / pizzeria.reviews.length).toFixed(1) %></strong>
-                </td>  
-              <% }) %>
             </tr>
         </tbody>
     </table>
 </section>
+
+<br>
+<table>
+  <thead>
+    <tr>
+      <th>RATING</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% let total = 0 %>
+    <% pizzeria.reviews.forEach(function(r) { %>
+    <% total += r.rating %>
+      <td style="font-size: 20px" style="height: 30px; width: 30px;">
+        <strong><%= (total / pizzeria.reviews.length).toFixed(1) %></strong>
+      </td>  
+    <% }) %>
+  </tbody>
+</table>
 
 <!-- REVIEWS FORM HTML -->
 <br><br><h3>Reviews</h3>
