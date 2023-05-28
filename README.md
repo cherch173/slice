@@ -94,7 +94,6 @@ For **Authentication and Authorization** purposes we'll be using OAuth to avoid 
     - [X] Create Models, Views & Controller Directories for Pizzerias
     - [X] Begin Pizzerias Routing
     - [X] Create first Database entries with Node & MongoDB 
-
 - Monday: 
     - [X] Models (Pizzeria): Generate Schemas and Database
     - [X] New (MVC)
@@ -102,7 +101,10 @@ For **Authentication and Authorization** purposes we'll be using OAuth to avoid 
     - [X] Render NEW Pizzerias to INDEX (All Pizzerias)
     - [X] Show Functionality
     - [X] Add Details feature that pulls individual Pizzeria by Object ID (Get/:id)
-    - [] Reviews (MVC)
+    - [X] Reviews (MVC)
+    - [X] Succesfully test adding Reviews
+    - [X] Verify in MongoDB that reviewSchema is actually being sent to pizzeriaSchema and is logging values as Objects inside an Array
+    - [] Delete Reviews Functionality
 - Tuesday: 
     - [] Authentication/ Authorizaation OAuth
 - Wednesday: 
