@@ -29,20 +29,22 @@
 
 <!-- REVIEWS FORM HTML -->
 <br><br><h3>Reviews</h3>
-<form id="add-review-form" method="POST"
-  action="/pizzerias/<%= pizzeria._id %>/reviews">
-  <label>Comments:</label><br>
-  <textarea name="content"></textarea><br>
-  <label>Rating:</label>
-  <select name="rating">
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5" selected>5</option>
-  </select><br><br>
-  <input type="submit" value="Add Review">
-</form>
+<% if (user) { %>
+  <form id="add-review-form" method="POST"
+    action="/pizzerias/<%= pizzeria._id %>/reviews">
+    <label>Comments:</label><br>
+    <textarea name="content"></textarea><br>
+    <label>Rating:</label>
+    <select name="rating">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5" selected>5</option>
+    </select><br><br>
+    <input type="submit" value="Add Review">
+  </form>
+<% } %>
 <br>
 
 <!-- THE FUNCTION needed to DISPLAY the pizzeria's REVIEWS-->
