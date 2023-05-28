@@ -22,7 +22,7 @@
               <td><%= pizzeria.borough %></td>
               <td><%= pizzeria.address %></td>
               <td><%= pizzeria.vegan ? 'Yasss' : 'Nah' %></td>
-              <td></td>
+              <td><%= pizzeria.reviews.rating %></td>
               <td><a href="/pizzerias/<%= pizzeria._id %>">click to review</a></td>
 
           </tr>
