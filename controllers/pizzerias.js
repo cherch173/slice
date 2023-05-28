@@ -1,21 +1,21 @@
 const Pizzeria = require('../models/pizzeria');
 
 module.exports = {
-    new: newPizzeria,
-    create,
     index,
-    show
+    show,
+    new: newPizzeria,
+    create
 };
-
-async function show(req, res) {
-    const pizzeria = await Pizzeria.findById(req.params.id);
-    res.render('pizzerias/show', { title: 'Pizzeria Detail', pizzeria });
-  }
 
 async function index(req, res) {
     const pizzerias = await Pizzeria.find({});
     res.render('pizzerias/index', { title: 'The Whole Pie', pizzerias})
-}    
+} 
+
+async function show(req, res) {
+    const pizzeria = await Pizzeria.findById(req.params.id);
+    res.render('pizzerias/show', { title: 'Pizzeria Details', pizzeria});
+  }   
 
 async function create(req, res) {
     // switches the vegan checkbox on and off
