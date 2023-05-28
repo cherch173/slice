@@ -38,7 +38,13 @@ app.use(session({
 // Mount Passport Middleware
 app.use(passport.initialize());
 app.use(passport.session());
-// ends middleware stuff 
+// ends middleware stuff
+
+// makes user variable active inside all ejs templates
+app.use(function (req, res, next) {
+  res.locals.user = req.user;
+  next();
+})
 
 app.use(express.static(path.join(__dirname, 'public')));
 

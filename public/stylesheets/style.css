@@ -52,6 +52,12 @@ h3 {
   font-size: 20px;
 }
 
+h4 {
+  font-size: 18px;
+  text-shadow: -.25px .25px whitesmoke, -.5px .5px black;
+
+}
+
 h5 {
   font-size: 14px;
 }
