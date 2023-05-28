@@ -72,7 +72,6 @@ tbody {
 
 th {
   padding: 5px 5px 5px 5px;
-
 }
 
 td {
@@ -103,7 +102,7 @@ button {
   border: 1px solid firebrick;
   color: firebrick;
   font-size: 14px;
-  border-radius: 6%;
+  border-radius: 5px;
 }
 
 button:hover {
@@ -111,8 +110,7 @@ button:hover {
   color: crimson;
   transform: scale(1.15);
   transition: transform 173ms ease-in;
-  border: 1px solid tomato;
-  border-radius: 13%;
+  border: 1px solid firebrick;
 }
 
 /* #add-review-form {
