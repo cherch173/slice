@@ -105,10 +105,12 @@ For **Authentication and Authorization** purposes we'll be using OAuth to avoid 
     - [X] Succesfully test adding Reviews
     - [X] Verify in MongoDB that reviewSchema is actually being sent to pizzeriaSchema and is logging values as Objects inside an Array
 - **Tuesday**: 
+    - [] Authentication/ Authorizaation OAuth
+    - [X] Create Google API Credentials
+    - [X] Install Express Session Middleware
     - [] Delete Reviews Functionality
     - [] ratingsTotal composed
     - [] ratingsTotal displaying
-    - [] Authentication/ Authorizaation OAuth
 - **Wednesday**: 
     - [] Debugging & sussin out errors/typos
 - **Thursday**:
