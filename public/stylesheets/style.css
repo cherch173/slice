@@ -143,6 +143,18 @@ button:hover {
   border: 1px solid firebrick;
 }
 
+.login {
+  position: relative;
+  left: 333px;
+  background-color: firebrick;
+  color: whitesmoke;
+  width: 173px;
+  height: 66px;
+  border: 2px double whitesmoke;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
 #add-review-form input[type="submit"] {
   border: 1px solid firebrick;
   color: firebrick;
