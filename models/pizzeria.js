@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 const pizzeriaSchema = new Schema({
     name: String,
     borough: {type: String,
-        enum: ['Bronx', 'Brooklyn', 'Manhattan', 'Queens', 'Staten Island', 'Long Island', 'Westchester', 'Jers', 'Connecticut'],
+        enum: ['The Bronx', 'Brooklyn', 'Manhattan', 'Queens', 'Staten Island', 'Long Island', 'Westchester', 'Jers', 'Connecticut'],
         required: true
     },
     address: String,
