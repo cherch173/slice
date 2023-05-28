@@ -19,7 +19,7 @@ nav {
   width: cover;
   font-size: 18px;
   cursor: pointer;
-  border-radius: 2%;
+  border-radius: 5px;
 }
 
 a {
@@ -86,22 +86,17 @@ td:hover {
   transition: transform 173ms ease-in;
 }
 
-#new-form {
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(2, minmax(auto, 22rem));
-}
-
 #new-form *, #add-reviewform * {
-  font-size: 20px;
+  font-size: 14px;
   padding: 5px;
   border-radius: 5px;
 }
 
 #new-form input[type="submit"] {
   grid-column: span 2;
-  width: 10rem;
+  width: 4rem;
   margin-left: auto;
+  
 }
 
 button {
