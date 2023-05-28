@@ -64,6 +64,7 @@
         <th>DATE</th>
         <th>REVIEW</th>
         <th>RATING</th>
+
       </tr>
     </thead>
 
@@ -76,6 +77,13 @@
           <td><%= r.createdAt.toLocaleDateString() %></td>
           <td><%= r.content %></td>
           <td><%= r.rating %></td>
+          <td style="background-color: whitesmoke;">
+            <% if (user?._id.equals(r.user)) { %>
+              <form action="/reviews/<%= r._id %>?_method=DELETE" method="POST">
+                <button type="submit">DELETE</button>
+              </form>
+            <% } %>
+          </td>
         </tr>
       <% }); %>
       <!-- Adding one more row to display total Rating -->
