@@ -41,30 +41,31 @@
   </select><br><br>
   <input type="submit" value="Add Review">
 </form>
+<br>
 
 <!-- THE FUNCTION needed to DISPLAY the pizzeria's REVIEWS-->
-<br>
+
+<% if (pizzeria.reviews.length) { %>
   <table>
     <thead>
       <tr>
-        <th>DATE</th>
-        <th>REVIEW</th>
-        <th>RATING</th>
+        <th>Date</th>
+        <th>Review</th>
+        <th>Rating</th>
       </tr>
     </thead>
     <tbody>
-
+      <% pizzeria.reviews.forEach(function(r) { %>
         <tr>
-          <!-- .toLocaleDateString() provides a more friendly date format -->
-          <td> 05/27/2023 </td>
-          <td>yadda yadda yadaadadada</td>
-          <td>5</td>
+          <td><%= r.createdAt.toLocaleDateString() %></td>
+          <td><%= r.content %></td>
+          <td><%= r.rating %></td>
         </tr>
-
+      <% }); %>
     </tbody>
   </table>
-
+  <% } else { %>
     <h5>No Reviews Yet</h5>
-
+  <% } %>
   
 <%- include('../partials/footer') %>
