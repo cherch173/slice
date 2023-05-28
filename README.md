@@ -99,11 +99,11 @@ For **Authentication and Authorization** purposes we'll be using OAuth to avoid 
     - [X] Models (Pizzeria): Generate Schemas and Database
     - [X] New (MVC)
     - [X] Prove MongoDB is accepting new Data via Models by checking Atlas itself
-    - [] Render NEW Pizzerias to INDEX (All Pizzerias)
-    - [] Reviews (MVC) & 
-    - [] Show Functionality
+    - [X] Render NEW Pizzerias to INDEX (All Pizzerias)
+    - [X] Show Functionality
+    - [x] Add Details feature that pulls individual Pizzeria by Object ID (Get/:id)
+    - [] Reviews (MVC)
 - Tuesday: 
-    - [] Reviews (MVC) contd
     - [] Authentication/ Authorizaation OAuth
 - Wednesday: 
     - [] Debugging & sussin out errors/typos

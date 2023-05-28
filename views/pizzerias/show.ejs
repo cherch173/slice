@@ -5,19 +5,21 @@
     <table>
         <thead>
             <tr>
-                <th>NAME</th>
-                <th>BOROUGH</th>
-                <th>ADDRESS</th>
-                <th>VEGAN FRIENDLY?</th>
+              <th style="font-size: 18px">NAME</th>
+              <th style="font-size: 18px">BOROUGH</th>
+              <th style="font-size: 18px">ADDRESS</th>
+              <th style="font-size: 18px">VEGAN FRIENDLY?</th>
+              <th style="font-size: 18px">RATING</th>
             </tr>
-        </thead>
+          </thead>
 
         <tbody>
             <tr>
-                <td><%= pizzeria.name %></td>
-                <td><%= pizzeria.borough %></td>
-                <td><%= pizzeria.address %></td>
-                <td><%= pizzeria.vegan ? 'Yasss' : 'Nah' %></td>
+                <td style="font-size: 16px"><%= pizzeria.name %></td>
+                <td style="font-size: 16px"><%= pizzeria.borough %></td>
+                <td style="font-size: 16px"><%= pizzeria.address %></td>
+                <td style="font-size: 16px"><%= pizzeria.vegan ? 'Yasss' : 'Nah' %></td>
+                <td style="font-size: 16px"> <%= pizzeria.rating %> </td>
             </tr>
         </tbody>
     </table>
@@ -27,8 +29,8 @@
 <br><br><h3>Reviews</h3>
 <form id="add-review-form" method="POST"
   action="/pizzerias/<%= pizzeria._id %>/reviews">
-  <label>Review:</label>
-  <textarea name="content"></textarea>
+  <label>Review:</label><br>
+  <textarea name="content"></textarea><br>
   <label>Rating:</label>
   <select name="rating">
     <option value="1">1</option>
@@ -36,12 +38,12 @@
     <option value="3">3</option>
     <option value="4">4</option>
     <option value="5" selected>5</option>
-  </select>
+  </select><br><br>
   <input type="submit" value="Add Review">
 </form>
 
 <!-- THE FUNCTION needed to DISPLAY the pizzeria's REVIEWS-->
-
+<br>
   <table>
     <thead>
       <tr>

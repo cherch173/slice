@@ -6,23 +6,24 @@
   <table>
       <thead>
           <tr>
-              <th>NAME</th>
-              <th>BOROUGH</th>
-              <th>ADDRESS</th>
-              <th>VEGAN FRIENDLY?</th>
-              <th>DETAILS & REVIEWS</th>
+              <th style="font-size: 16px">NAME</th>
+              <th style="font-size: 16px">BOROUGH</th>
+              <th style="font-size: 16px">ADDRESS</th>
+              <th style="font-size: 16px">VEGAN FRIENDLY?</th>
+              <th style="font-size: 16px">RATING</th>
+              <th style="font-size: 16px">DISH</th>
           </tr>
       </thead>
 
       <tbody>
         <% pizzerias.forEach((pizzeria) => { %>
-          <% console.log(pizzeria) %>
           <tr>
               <td><%= pizzeria.name %></td>
               <td><%= pizzeria.borough %></td>
               <td><%= pizzeria.address %></td>
               <td><%= pizzeria.vegan ? 'Yasss' : 'Nah' %></td>
-              <td><a href="/pizzerias/<%= pizzeria._id %>">[More Info]</a></td>
+              <td></td>
+              <td><a href="/pizzerias/<%= pizzeria._id %>">[click to review]</a></td>
 
           </tr>
           <% }) %>    
