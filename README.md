@@ -36,7 +36,7 @@ User Authentication will be achieved using **Google OAuth**.
 ### _**Technologies**_
 - ExpressJS
 - MongoDB / Mongoose
-- Axios
+- Axios (version 2.0)
 - OAuth through Google
 ***
 ## _**Getting Started**_
@@ -54,6 +54,7 @@ Much like our mongoose-movies exercise, I plan to implement a user-based rating 
 
 Through the **pizzeriaSchema**, USERS will be able to contribute to a small array of data that will be visible when they SELECT a Pizzeria:
 - name: String
+- Borough: String
 - address: String
 - openTil : Time
 - vegan / gluten-free: Boolean
@@ -61,7 +62,7 @@ Through the **pizzeriaSchema**, USERS will be able to contribute to a small arra
 
 The **reviewSchema** will be simplistic, carrying only the following crtieria:
 - rating: Number
-- review: Text
+- review: Content (Text)
 - totalRating: Number
 
 We'll use **SHOW Functionality** to bring active and recently added pizzerias to the home page (INDEX).
