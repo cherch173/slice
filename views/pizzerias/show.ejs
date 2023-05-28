@@ -24,9 +24,9 @@
               <% let total = 0 %>
               <% pizzeria.reviews.forEach(function(r) { %>
               <% total += r.rating %>
-              <td>
-                <strong><%= (total / pizzeria.reviews.length).toFixed(1) %></strong>
-              </td>
+                <td>
+                  <strong><%= (total / pizzeria.reviews.length).toFixed(1) %></strong>
+                </td>  
               <% }) %>
             </tr>
         </tbody>

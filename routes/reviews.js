@@ -9,5 +9,8 @@ const reviewsCtrl = require('../controllers/reviews')
 // POST /pizzerias/:id/reviews
 router.post('/pizzerias/:id/reviews', reviewsCtrl.create);
 
+// DELETE /reviews
+router.delete('/reviews/:id', reviewsCtrl.delete);
+
 
 module.exports = router;
