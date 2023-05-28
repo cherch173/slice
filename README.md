@@ -84,7 +84,7 @@ For **Authentication and Authorization** purposes we'll be using OAuth to avoid 
 ***
 ## **_PROJECT FLOW_**
 
-- Weekend
+- **Weekend**
     - [X] Build Express Framework
     - [X] Install node packages
     - [X] Install dotenv & create gitIgnore to ensure safety
@@ -94,7 +94,7 @@ For **Authentication and Authorization** purposes we'll be using OAuth to avoid 
     - [X] Create Models, Views & Controller Directories for Pizzerias
     - [X] Begin Pizzerias Routing
     - [X] Create first Database entries with Node & MongoDB 
-- Monday: 
+- **Monday** (_completed by Saturday 05/27/2023_): 
     - [X] Models (Pizzeria): Generate Schemas and Database
     - [X] New (MVC)
     - [X] Prove MongoDB is accepting new Data via Models by checking Atlas itself
@@ -104,12 +104,12 @@ For **Authentication and Authorization** purposes we'll be using OAuth to avoid 
     - [X] Reviews (MVC)
     - [X] Succesfully test adding Reviews
     - [X] Verify in MongoDB that reviewSchema is actually being sent to pizzeriaSchema and is logging values as Objects inside an Array
+- **Tuesday**: 
     - [] Delete Reviews Functionality
-- Tuesday: 
     - [] Authentication/ Authorizaation OAuth
-- Wednesday: 
+- **Wednesday**: 
     - [] Debugging & sussin out errors/typos
-- Thursday:
+- **Thursday**:
     - [] Aesthetics (CSS & Bootstrap)
     - [] Final Testing Phase
     - [] Deploy
