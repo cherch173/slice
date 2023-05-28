@@ -21,7 +21,13 @@
                 <td style="font-size: 16px"><%= pizzeria.address %></td>
                 <td style="font-size: 16px"><%= pizzeria.openTil %></td>
                 <td style="font-size: 16px"><%= pizzeria.vegan ? 'Yasss' : 'Nah' %></td>
-                <td style="font-size: 16px"> <%= pizzeria.rating %> </td>
+              <% let total = 0 %>
+              <% pizzeria.reviews.forEach(function(r) { %>
+              <% total += r.rating %>
+              <td>
+                <strong><%= (total / pizzeria.reviews.length).toFixed(1) %></strong>
+              </td>
+              <% }) %>
             </tr>
         </tbody>
     </table>
@@ -54,10 +60,10 @@
     
     <thead>
       <tr>
-        <th>User</th>
-        <th>Date</th>
-        <th>Review</th>
-        <th>Rating</th>
+        <th>USER</th>
+        <th>DATE</th>
+        <th>REVIEW</th>
+        <th>RATING</th>
       </tr>
     </thead>
 

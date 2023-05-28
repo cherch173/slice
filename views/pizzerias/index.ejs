@@ -22,13 +22,20 @@
               <td><%= pizzeria.borough %></td>
               <td><%= pizzeria.address %></td>
               <td><%= pizzeria.vegan ? 'Yasss' : 'Nah' %></td>
-              <td><%= pizzeria.reviews.rating %></td>
+              <% let total = 0 %>
+              <% pizzeria.reviews.forEach(function(r) { %>
+              <% total += r.rating %>
+              <td>
+                <strong><%= (total / pizzeria.reviews.length).toFixed(1) %></strong>
+              </td>
+              <% }) %>
               <td><a href="/pizzerias/<%= pizzeria._id %>">click to review</a></td>
 
           </tr>
           <% }) %>    
       </tbody>
   </table>
+  
 </section>
 
   <tbody>
