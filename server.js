@@ -9,8 +9,9 @@ require('dotenv').config();
 // connect to the database with AFTER the config vars are processed
 require('./config/database');
 
-var indexRouter = require('./routes/index');
-var pizerriasRouter = require('./routes/pizzerias');
+const indexRouter = require('./routes/index');
+const pizerriasRouter = require('./routes/pizzerias');
+const reviewsRouter = require('./routes/reviews');
 
 var app = express();
 
@@ -26,6 +27,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/pizzerias', pizerriasRouter);
+app.use('/', reviewsRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
