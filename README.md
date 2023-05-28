@@ -106,6 +106,8 @@ For **Authentication and Authorization** purposes we'll be using OAuth to avoid 
     - [X] Verify in MongoDB that reviewSchema is actually being sent to pizzeriaSchema and is logging values as Objects inside an Array
 - **Tuesday**: 
     - [] Delete Reviews Functionality
+    - [] ratingsTotal composed
+    - [] ratingsTotal displaying
     - [] Authentication/ Authorizaation OAuth
 - **Wednesday**: 
     - [] Debugging & sussin out errors/typos
