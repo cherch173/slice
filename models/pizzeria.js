@@ -12,7 +12,12 @@ const reviewSchema = new Schema({
       max: 5,
       default: 3,
       required: true
-    }
+    },
+    user: {
+      type: Schema.Types.ObjectId,
+      ref: 'User',
+      required: true
+    },  
   }, {
     timestamps: true
   });
