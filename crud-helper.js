@@ -5,8 +5,7 @@ require('dotenv').config();
 require('./config/database');
 
 // Require the app's Mongoose models
-const Movie = require('./models/movie');
-const Performer = require('./models/performer');
+const Pizzeria = require('./models/pizzeria');
 
-let movies = await Movie.find({});
-console.log(movies);
+let pizzerias = await Pizzeria.find({});
+console.log(pizzerias);
