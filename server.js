@@ -3,6 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+const methodOverride = require('method-override')
 
 // Session Middleware
 const session = require('express-session');
@@ -29,6 +30,8 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+// Mount method override
+app.use(methodOverride('_method'));
 // Session Middleware
 app.use(session({
   secret: process.env.SECRET,
