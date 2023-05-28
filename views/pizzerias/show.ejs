@@ -16,7 +16,7 @@
 
         <tbody>
             <tr>
-                <td style="font-size: 16px"><%= pizzeria.name %></td>
+                <td style="font-size: 18px" style="height: 30px; width: 30px;">  <span style="text-shadow: -.25px .25px whitesmoke, -.5px .5px black; font-size: 18px;"><%= pizzeria.name %></td>
                 <td style="font-size: 16px"><%= pizzeria.borough %></td>
                 <td style="font-size: 16px"><%= pizzeria.address %></td>
                 <td style="font-size: 16px"><%= pizzeria.openTil %></td>
@@ -42,11 +42,11 @@
     <textarea name="content"></textarea><br>
     <label>Rating:</label>
     <select name="rating">
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5" selected>5</option>
+      <option value="1">1 (nah, I'm good)</option>
+      <option value="2">2 (yeesh) </option>
+      <option value="3 " selected>3 (average)</option>
+      <option value="4">4 (damn fine)</option>
+      <option value="5">5 (holy shit)</option>
     </select><br><br>
     <input type="submit" value="Add Review">
   </form>
@@ -72,7 +72,7 @@
       <% pizzeria.reviews.forEach(function(r) { %>
         <% total += r.rating %>
         <tr>
-          <td class="review-user"><img alt="avatar" src="<%= r.userAvatar %>" referrerpolicy="no-referrer" style="height: 30px; width: 30px;"> -- <span style="color: crimson; text-shadow: -.25px .25px whitesmoke, -.5px .5px black; font-size: 18px;"> <%= r.userName %></span> </td>
+          <td class="review-user"><img alt="avatar" src="<%= r.userAvatar %>" referrerpolicy="no-referrer" style="height: 30px; width: 30px;">  <span style="color: crimson; text-shadow: -.25px .25px whitesmoke, -.5px .5px black; font-size: 18px;"> <%= r.userName %></span> </td>
           <td><%= r.createdAt.toLocaleDateString() %></td>
           <td><%= r.content %></td>
           <td><%= r.rating %></td>
