@@ -11,7 +11,7 @@ passport.use(new GoogleStrategy(
     async function(accessToken, refreshToken, profile, cb) {
       // A user has logged in with OAuth...
       try {
-       let user = await User.findOne({ googleId: profile.ed});
+       let user = await User.findOne({ googleId: profile.id });
        if (user) return cb(null, user);
        user = await User.create({
         name: profile.displayName,
