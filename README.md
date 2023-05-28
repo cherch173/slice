@@ -101,7 +101,7 @@ For **Authentication and Authorization** purposes we'll be using OAuth to avoid 
     - [X] Prove MongoDB is accepting new Data via Models by checking Atlas itself
     - [X] Render NEW Pizzerias to INDEX (All Pizzerias)
     - [X] Show Functionality
-    - [x] Add Details feature that pulls individual Pizzeria by Object ID (Get/:id)
+    - [X] Add Details feature that pulls individual Pizzeria by Object ID (Get/:id)
     - [] Reviews (MVC)
 - Tuesday: 
     - [] Authentication/ Authorizaation OAuth

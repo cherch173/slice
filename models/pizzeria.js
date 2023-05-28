@@ -1,6 +1,22 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
+const reviewSchema = new Schema({
+    content: {
+      type: String,
+      required: true
+    },
+    rating: {
+      type: Number,
+      min: 1,
+      max: 5,
+      default: 3,
+      required: true
+    }
+  }, {
+    timestamps: true
+  });
+
 const pizzeriaSchema = new Schema({
     name: String,
     borough: {type: String,
@@ -10,8 +26,7 @@ const pizzeriaSchema = new Schema({
     address: String,
     openTil: String,
     vegan: Boolean,
-    rating: {type: Number,
-    required: true}
+    reviews: [reviewSchema]
 }, {
     timestamps: true
 });

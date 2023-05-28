@@ -14,7 +14,7 @@ async function index(req, res) {
 
 async function show(req, res) {
     const pizzeria = await Pizzeria.findById(req.params.id);
-    res.render('pizzerias/show', { title: 'Pizzeria Details', pizzeria});
+    res.render('pizzerias/show', { title: 'Pizzeria Detail', pizzeria});
   }   
 
 async function create(req, res) {
