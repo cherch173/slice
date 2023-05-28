@@ -109,13 +109,13 @@ For **Authentication and Authorization** purposes we'll be using OAuth to avoid 
     - [X] Create Google API Credentials
     - [X] Install Express Session Middleware
     - [X] Install Passport
-    - [] Delete Reviews Functionality
-    - [] ratingsTotal composed
-    - [] ratingsTotal displaying
+    - [X] Delete Reviews Functionality
+    - [X] ratingsTotal composed
+    - [] ratingsTotal displaying correctly
 - **Wednesday**: 
     - [] Debugging & sussin out errors/typos
 - **Thursday**:
-    - [] Aesthetics (CSS & Bootstrap)
+    - [X] Aesthetics (CSS & Bootstrap)
     - [] Final Testing Phase
     - [] Deploy
 ***

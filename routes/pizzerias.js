@@ -11,7 +11,7 @@ const ensureLoggedIn = require('../config/ensureLoggedIn');
 // all Routes DEFAULT to .movies
 
 // GET Route for /pizzerias (Index Route)
-router.get('/', pizzeriasCtrl.index);
+router.get('/', ensureLoggedIn, pizzeriasCtrl.index);
 
 // GET Route for pizzerias/new
 // create the mere existence of
