@@ -35,6 +35,7 @@ const pizzeriaSchema = new Schema({
     vegan: Boolean,
     reviews: [reviewSchema]
 }, {
+    unique: true,
     timestamps: true
 });
 
