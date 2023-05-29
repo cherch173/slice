@@ -5,21 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <title>Slice - NYC's Pizza Power Rankings</title>
   </head>
 
   <body>
     <nav>  
-      <a href="/">HOME</a> 
+      <a href="/">HOME</a>
       <% if (user) { %>
-      | <a href="/pizzerias/new" >SUBMIT A NEW PIZZERIA</a> |
-      <a href="/pizzerias" <%- title === "The Whole Pie" ? 'class="active"' : '' %>>THE WHOLE PIE (All Pizzerias)</a> |
-      <img src="https://i.imgur.com/FHjYyi0.png" style="max-width: 16px; text-align: right"> <a href="/logout">LOG OUT</a>
-      <% } else { %>
+          | <a href="/pizzerias" <%- title === "The Whole Pie" ? 'class="active"' : '' %>>THE WHOLE PIE (All Pizzerias)</a> |
+          <a href="/pizzerias/new" >NEW PIZZERIA</a> |
+          <img src="https://i.imgur.com/FHjYyi0.png" style="max-width: 16px; text-align: right"> <a href="/logout">LOG OUT</a>
+        <% } else { %>
       <!-- <img src="https://i.imgur.com/FHjYyi0.png" style="max-width: 16px; text-align: right"> <a href="/auth/google" class="login">LOG IN</a> -->
       <% } %>
       </nav>
 
-    <h2><span style="color: firebrick"><span style="text-shadow: -.5px 5px whitesmoke -1px 1px black">Slice</span></span></h2>
+    <h2><span style="color: firebrick; text-shadow: -.5px 5px whitesmoke -1px 1px black">Slice</span></span></h2>
