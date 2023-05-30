@@ -89,10 +89,10 @@
       <% pizzeria.reviews.forEach(function(r) { %>
         <% total += r.rating %>
         <tr>
-          <td class="review-user"><img alt="avatar" src="<%= r.userAvatar %>" referrerpolicy="no-referrer" style="height: 30px; width: 30px;">  <span style="color: crimson; text-shadow: -.25px .25px whitesmoke, -.5px .5px black; font-size: 18px;"> <%= r.userName %></span> </td>
+          <td class="review-user"><img alt="avatar" src="<%= r.userAvatar %>" referrerpolicy="no-referrer" style="height: 5vmin; width: 5vmin;">  <span style="color: crimson; text-shadow: -.25px .25px whitesmoke, -.5px .5px black; font-size: 2.5vmin;"> <%= r.userName %></span> </td>
           <td><%= r.createdAt.toLocaleDateString() %></td>
           <td><%= r.content %></td>
-          <td><%= r.rating %></td>
+          <td style="font-size: 2.5vmin"><%= r.rating %></td>
           <td style="background-color: whitesmoke;">
             <% if (user?._id.equals(r.user)) { %>
               <form action="/reviews/<%= r._id %>?_method=DELETE" method="POST">
