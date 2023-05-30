@@ -24,14 +24,14 @@ body > nav {
   justify-content: flex-start;
   align-items: center;
   text-align: center;
-  padding: 10px 10px 0 10px;
+  padding: 10px 10px 30px 10px;
   border: 2px double firebrick;
 }
 
 nav {
   height: 42px;
   text-overflow: hidden;
-  font-size: 17px;
+  font-size: 2vmin;
   cursor: pointer;
   border-radius: 5px;
   align-items: center;
@@ -49,6 +49,7 @@ nav:hover {
 a:hover {
   color: whitesmoke;
   text-shadow: -.25px .25px black;
+  font-size: 2.12vmin;
 }
 
 nav > a:hover {
@@ -180,10 +181,26 @@ button:hover {
 
 footer {
   font-size: 12px;
+  margin-bottom: 30px;
 }
 
 footer > a:hover {
   color: firebrick;
-  font-size: 13px;
+  font-size: 115%;
 }
 
+@media only screen and (max-width: 768px) {
+  nav {
+    font-size: 2.5vmin;
+  }
+  th {
+    background-color: rgba(254, 161, 161, 0.73);
+    font-size: 2vmin;
+  }
+  tr {
+    font-size:1.5vmin;
+  }
+  footer {
+    font-size: 1.5vmin;
+  }
+}
