@@ -64,6 +64,10 @@ h5 {
   font-size: 14px;
 }
 
+#wholePie {
+text-align: center;
+}
+
 thead {
   background-color: rgb(250, 183, 183);
   color: crimson;
@@ -145,7 +149,6 @@ button:hover {
 
 .login {
   position: relative;
-  left: 333px;
   background-color: firebrick;
   color: whitesmoke;
   width: 173px;
