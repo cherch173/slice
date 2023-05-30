@@ -1,8 +1,11 @@
 body {
+  box-sizing: border-box;
   height: 100vh;
+  margin: 0;
   padding: 30px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-color: whitesmoke;
+  display: grid;
 }
 
 body > nav {
@@ -17,7 +20,7 @@ body > nav {
 
 nav {
   height: 30px;
-  width: cover;
+  text-overflow: hidden;
   font-size: 17px;
   cursor: pointer;
   border-radius: 5px;
@@ -173,3 +176,4 @@ footer > a:hover {
   color: firebrick;
   font-size: 13px;
 }
+

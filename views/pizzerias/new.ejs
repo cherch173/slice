@@ -1,6 +1,6 @@
 <%- include('../partials/header') %>
 
-<h5>Add a <span style="color: crimson">New Pizzeria</span> to Slice</h5>
+<h4>Add a <span style="color: crimson">New Pizzeria</span> to Slice</h4>
 <form id="new-form" action="/pizzerias" method="POST">
   <label>Name: 
     <input type="text" name="name">
@@ -27,16 +27,7 @@
   <label>Vegan Friendly?
     <input type="checkbox" name="vegan" checked>
   </label><br>
-  <!-- <label>Rating: 
-    <select name="rating">
-      <option value="1">1 (nah i'm good)</option>
-      <option value="2">2</option>
-      <option value="3" selected>3</option>
-      <option value="4">4</option>
-      <option value="5">5 (holy shit)</option>
-    </select>
-  </label>
--->
+
   <br>
   <button type="submit">Add Pizzeria</button>
 </form>
