@@ -24,7 +24,7 @@ body > nav {
   justify-content: flex-start;
   align-items: center;
   text-align: center;
-  padding: 1vmin 3vmin 1vmin 3vmin;
+  padding: 1.5vmin 3vmin 1vmin 3vmin;
   border: 2px double firebrick;
 }
 

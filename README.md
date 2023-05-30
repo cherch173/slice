@@ -113,10 +113,11 @@ For **Authentication and Authorization** purposes we'll be using OAuth to avoid 
     - [X] Delete Reviews Functionality
     - [X] ratingsTotal composed (_up to **here** was completed Sunday May 28th, 2023_)
     - [X] ratingsTotal displaying correctly
+    - [X] Aesthetics (CSS & Bootstrap)
 - **Wednesday**: 
+    - [] Adjust Open Til Time to 12H format and include am/pm
     - [] Debugging & sussin out errors/typos
 - **Thursday**:
-    - [X] Aesthetics (CSS & Bootstrap)
     - [] Final Testing Phase
     - [] Deploy
 ***
