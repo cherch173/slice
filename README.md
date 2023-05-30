@@ -112,7 +112,7 @@ For **Authentication and Authorization** purposes we'll be using OAuth to avoid 
     - [X] Install Passport
     - [X] Delete Reviews Functionality
     - [X] ratingsTotal composed (_up to **here** was completed Sunday May 28th, 2023_)
-    - [] ratingsTotal displaying correctly
+    - [X] ratingsTotal displaying correctly
 - **Wednesday**: 
     - [] Debugging & sussin out errors/typos
 - **Thursday**:
