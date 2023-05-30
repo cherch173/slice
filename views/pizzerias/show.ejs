@@ -16,11 +16,11 @@
 
         <tbody>
             <tr>
-                <td style="font-size: 18px" style="height: 30px; width: 30px;">  <span style="text-shadow: -.25px .25px whitesmoke, -.5px .5px black; font-size: 18px;"><%= pizzeria.name %></td>
-                <td style="font-size: 16px"><%= pizzeria.borough %></td>
-                <td style="font-size: 16px"><%= pizzeria.address %></td>
-                <td style="font-size: 16px"><%= pizzeria.openTil %></td>
-                <td style="font-size: 16px"><%= pizzeria.vegan ? 'Yasss' : 'Nah' %></td>
+                <td style="font-size: 3vmin" style="height: 30px; width: 30px;">  <span style="text-shadow: -.25px .25px whitesmoke, -.5px .5px black; font-size: 3vmin;"><%= pizzeria.name %></td>
+                <td style="font-size: 3vmin"><%= pizzeria.borough %></td>
+                <td style="font-size: 3vmin"><%= pizzeria.address %></td>
+                <td style="font-size: 3vmin"><%= pizzeria.openTil %></td>
+                <td style="font-size: 3vmin"><%= pizzeria.vegan ? 'Yasss' : 'Nah' %></td>
                 
             </tr>
         </tbody>
@@ -42,7 +42,7 @@
     <% total += r.rating %>
     <% }) %>
     <tr>
-    <td style="font-size: 20px" style="height: 30px; width: 30px">
+    <td id="ratingsNum" style="font-size: 20px" style="height: 30px; width: 30px">
       <strong><%= (total / pizzeria.reviews.length).toFixed(1) %></strong>
     </td>  
     </tr>
@@ -105,7 +105,7 @@
       <!-- Adding one more row to display total Rating -->
       <tr>
         <td colspan="3"></td>
-        <td style="font-size: 20px;">
+        <td id ="ratingsNum" style="font-size: 20px;">
           <strong><%= (total / pizzeria.reviews.length).toFixed(1) %></strong>
         </td>
       </tr>
