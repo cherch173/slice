@@ -89,7 +89,7 @@
       <% pizzeria.reviews.forEach(function(r) { %>
         <% total += r.rating %>
         <tr>
-          <td class="review-user"><img alt="avatar" src="<%= r.userAvatar %>" referrerpolicy="no-referrer" style="height: 5vmin; width: 5vmin;">  <span style="color: crimson; text-shadow: -.25px .25px whitesmoke, -.5px .5px black; font-size: 2.5vmin;"> <%= r.userName %></span> </td>
+          <td class="review-user"><img alt="avatar" src="<%= r.userAvatar %>" referrerpolicy="no-referrer" style="height: 6.66vmin; width: 6.66vmin; padding: 8px 8px 8px 8px;">  <span style="color: crimson; text-shadow: -.25px .25px whitesmoke, -.5px .5px black; font-size: 2.25vmin;"> <%= r.userName %></span> </td>
           <td><%= r.createdAt.toLocaleDateString() %></td>
           <td><%= r.content %></td>
           <td style="font-size: 2.5vmin"><%= r.rating %></td>
