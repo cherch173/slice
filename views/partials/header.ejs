@@ -11,9 +11,8 @@
   </head>
 
   <body>
-    <nav>  
-      
-      <% if (user) { %>
+    <% if (user) { %>
+    <nav>       
           <!-- <a href="/">HOME</a> -->
           <a href="/pizzerias" <%- title === "The Whole Pie" ? 'class="active"' : '' %>>THE WHOLE PIE</a> |
           <a href="/pizzerias/new" >NEW PIZZERIA</a> |
