@@ -52,9 +52,12 @@
 </table>
 
 <!-- REVIEWS FORM HTML -->
-<br><br><h3>Reviews</h3>
-<% if (user) { %>
-  <form id="add-review-form" method="POST"
+<br><br>
+<wrapper style="text-align: left">
+
+  <h3>Reviews</h3>
+  <% if (user) { %>
+    <form id="add-review-form" method="POST"
     action="/pizzerias/<%= pizzeria._id %>/reviews">
     <label>Comments:</label><br>
     <textarea name="content"></textarea><br>
@@ -68,13 +71,13 @@
     </select><br><br>
     <input type="submit" value="Add Review">
   </form>
-<% } %>
-<br>
-
-<!-- THE FUNCTION needed to DISPLAY the pizzeria's REVIEWS-->
-
-<% if (pizzeria.reviews.length) { %>
-  <table>
+  <% } %>
+  <br>
+  </wrapper>
+  <!-- THE FUNCTION needed to DISPLAY the pizzeria's REVIEWS-->
+  
+  <% if (pizzeria.reviews.length) { %>
+    <table>
     
     <thead>
       <tr>

@@ -8,6 +8,7 @@ body {
   padding: 4vmin 4vmin 4vmin 4vmin;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-color: whitesmoke;
+  text-align: center;
   display: grid;
   /* ** mobile first - single column ** */
   grid-template-columns: 1fr;
@@ -24,7 +25,7 @@ body > nav {
   position: relative;
   justify-content: center;
   align-items: center;
-  text-align: left;
+  /* text-align: left; */
   padding: 1vmin 3vmin 1vmin 3vmin;
   /* border: 2px double firebrick; */
 }
@@ -206,6 +207,9 @@ button:hover {
   border: 2px double whitesmoke;
   border-radius: 5px;
   margin-bottom: 40vmin;
+  align-items: center;
+  justify-content: center;
+  left: 50vmin;
 }
 
 #add-review-form input[type="submit"] {
