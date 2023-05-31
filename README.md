@@ -134,6 +134,11 @@ For **Authentication and Authorization** purposes we'll be using OAuth to avoid 
 ***
 ***
 ### _**Credits**_
+
+##### **PLUGINS USED**
+##### Sorttable.js[Sorttable.js](https://www.kryogenix.org/code/browser/sorttable)
+
+##### **IMAGES USED**
 ##### Ren & Stimpy Gif: [Tenor](https://media.tenor.com/X2xUUHbZrXMAAAAC/pizza-party.gif)
 ##### Spongebob Krusty Krab Pizza Gif: [Tenor](https://media.tenor.com/-lohISybXxoAAAAC/spongebob-the-krusty-krab-pizza.gif)
 ##### Homer Simpson Gif: [Gifer](ttps://i.gifer.com/IPR.gif)
