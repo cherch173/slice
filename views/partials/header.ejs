@@ -12,9 +12,10 @@
 
   <body>
     <nav>  
-      <a href="/">HOME</a>
+      
       <% if (user) { %>
-          | <a href="/pizzerias" <%- title === "The Whole Pie" ? 'class="active"' : '' %>>THE WHOLE PIE</a> |
+          <!-- <a href="/">HOME</a> -->
+          <a href="/pizzerias" <%- title === "The Whole Pie" ? 'class="active"' : '' %>>THE WHOLE PIE</a> |
           <a href="/pizzerias/new" >NEW PIZZERIA</a> |
           <img id ="googleImg" src="https://i.imgur.com/FHjYyi0.png"> 
           <a href="/logout">LOG OUT</a>
