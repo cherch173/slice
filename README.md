@@ -119,6 +119,7 @@ For **Authentication and Authorization** purposes we'll be using OAuth to avoid 
     - [X] Ensure Mobile Optimization and test media queries
     - [X] Clean out redundancies and/or duplicate commmands 
     - [X] Debugging & sussin out errors/typos
+    - [] Get Index Table to sort by Highest Ranking as default
 - **Thursday**:
     - [] Adjust Open Til Time to 12H format and include am/pm
     - [] BRANCH
