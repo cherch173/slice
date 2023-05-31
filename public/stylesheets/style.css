@@ -69,7 +69,7 @@ nav > a:hover {
 h2 {
   color: crimson;
   text-shadow: -.25px .25px whitesmoke, -.5px .5px black;
-  font-size: 5vmin;
+  font-size: 5.5vmin;
 }
 
 h3 {
@@ -209,7 +209,7 @@ button:hover {
   margin-bottom: 40vmin;
   align-items: center;
   justify-content: center;
-  left: 43%;
+  left: 40%;
 }
 
 #add-review-form input[type="submit"] {
