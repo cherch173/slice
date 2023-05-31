@@ -72,7 +72,7 @@ h2 {
 }
 
 h3 {
-  color: rgb(218, 63, 94);
+  color: firebrick;
   text-shadow: -.25px .25px whitesmoke, -.5px .5px black;
   font-size: 3vmin;
   margin-top: -0.5vmin;
@@ -216,7 +216,7 @@ footer > a:hover {
 
 @media only screen and (max-width: 768px) {
   body > nav {
-    background-color: rgba(251, 200, 200, 0.86);
+    /* background-color: rgba(251, 200, 200, 0.86); */
     justify-content: flex-start;
     align-items: center;
     text-align: center;
