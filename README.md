@@ -115,10 +115,12 @@ For **Authentication and Authorization** purposes we'll be using OAuth to avoid 
     - [X] ratingsTotal displaying correctly
     - [X] Aesthetics (CSS & Bootstrap)
 - **Wednesday**: 
-    - [] Adjust Open Til Time to 12H format and include am/pm
-    - [X] Debugging & sussin out errors/typos
     - [X] Make Index Table Sort-By
+    - [X] Ensure Mobile Optimization and test media queries
+    - [X] Clean out redundancies and/or duplicate commmands 
+    - [X] Debugging & sussin out errors/typos
 - **Thursday**:
+    - [] Adjust Open Til Time to 12H format and include am/pm
     - [] BRANCH
     - [] Try to implement Google Maps API to site from new branch to try to get subway data
     - [X] Final Testing Phase
