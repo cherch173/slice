@@ -209,7 +209,7 @@ button:hover {
   margin-bottom: 40vmin;
   align-items: center;
   justify-content: center;
-  left: 50vmin;
+  left: 44%;
 }
 
 #add-review-form input[type="submit"] {
