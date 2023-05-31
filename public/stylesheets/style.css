@@ -149,10 +149,17 @@ td:hover {
   -.2px .2px whitesmoke, -.4px .4px crimson, -.6px .6px rgb(26, 4, 4);
 }
 
+input[type="submit"] {
+  background-color: rgb(253, 237, 237);
+  color: whitesmoke;
+  border: 1px solid firebrick;
+  font-size: 2vmin;
+}
+
 input[type="submit"]:hover {
   background-color: rgb(248, 219, 219);
   color: crimson;
-  transform: scale(1.15);
+  transform: scale(1.10);
   transition: transform 173ms ease-in;
   border: 1px solid firebrick;
   font-size: 2vmin;
@@ -169,7 +176,6 @@ input[type="submit"]:hover {
   grid-column: span 2;
   width: 4rem;
   margin-left: auto;
-  
 }
 
 .review-user {
@@ -185,15 +191,16 @@ input[type="submit"]:hover {
 
 button {
   border: 1px solid firebrick;
-  color: firebrick;
-  font-size: 2.5vmin;
+  color: whitesmoke;
+  background-color: firebrick;
+  font-size: 2vmin;
   border-radius: 5px;
 }
 
 button:hover {
   background-color: rgb(248, 219, 219);
   color: crimson;
-  transform: scale(1.10);
+  transform: scale(1.08);
   transition: transform 173ms ease-in;
   border: 1px solid firebrick;
 }
@@ -214,10 +221,20 @@ button:hover {
 
 #add-review-form input[type="submit"] {
   border: 1px solid firebrick;
-  color: firebrick;
+  color: whitesmoke;
+  background-color: firebrick;
   font-size: 2vmin;
   border-radius: 5px;
 }
+
+#add-review-form input[type="submit"]:hover {
+  background-color: rgb(248, 219, 219);
+  color: crimson;
+  transform: scale(1.08);
+  transition: transform 173ms ease-in;
+  border: 1px solid firebrick;
+}
+
 
 footer {
   font-size: 2vmin;
