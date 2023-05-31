@@ -116,10 +116,13 @@ For **Authentication and Authorization** purposes we'll be using OAuth to avoid 
     - [X] Aesthetics (CSS & Bootstrap)
 - **Wednesday**: 
     - [] Adjust Open Til Time to 12H format and include am/pm
-    - [] Debugging & sussin out errors/typos
+    - [X] Debugging & sussin out errors/typos
+    - [X] Make Index Table Sort-By
 - **Thursday**:
-    - [] Final Testing Phase
-    - [] Deploy
+    - [] BRANCH
+    - [] Try to implement Google Maps API to site from new branch to try to get subway data
+    - [X] Final Testing Phase
+    - [X] Deploy
 ***
 ***
 
