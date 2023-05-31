@@ -5,7 +5,7 @@
 body {
   height: 100vh;
   margin: 0;
-  padding: 30px;
+  padding: 4vmin 4vmin 4vmin 4vmin;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-color: whitesmoke;
   display: grid;
