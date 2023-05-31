@@ -18,7 +18,11 @@
       <tbody>
         <% pizzerias.forEach((pizzeria) => { %>
           <tr>
-              <td><%= pizzeria.name %></td>
+              <td>
+                <strong>
+                <%= pizzeria.name %>
+              </strong>
+              </td>  
               <td><%= pizzeria.borough %></td>
               <td><%= pizzeria.address %></td>
               <td><%= pizzeria.vegan ? 'Yasss' : 'Nah' %></td>
