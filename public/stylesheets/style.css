@@ -50,7 +50,7 @@ nav:hover {
 a:hover {
   color: whitesmoke;
   text-shadow: -.25px .25px black;
-  font-size: 110%;
+  font-size: 105%;
 }
 
 nav > a:hover {
@@ -122,6 +122,14 @@ td:hover {
   cursor: pointer;
   transform: scale(1.05);
   transition: transform 173ms ease-in;
+}
+
+#pizzeriaLink {
+  color: firebrick;
+}
+
+#pizzeriaLink:hover {
+  color: whitesmoke;
 }
 
 #ratingsTable{
