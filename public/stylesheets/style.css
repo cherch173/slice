@@ -21,10 +21,11 @@ body {
 
 body > nav {
   background-color: rgba(251, 200, 200, 0.86);
-  justify-content: flex-start;
+  position: relative;
+  justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 1.5vmin 3vmin 1vmin 3vmin;
+  padding: 1vmin 3vmin 1vmin 3vmin;
   border: 2px double firebrick;
 }
 
