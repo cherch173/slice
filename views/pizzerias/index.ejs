@@ -21,7 +21,9 @@
           <tr>
               <td>
                 <strong>
-                <%= pizzeria.name %>
+                  <a href="/pizzerias/<%= pizzeria._id %>">
+                    <%= pizzeria.name %>
+                  </a>
               </strong>
               </td>  
               <td><%= pizzeria.borough %></td>
