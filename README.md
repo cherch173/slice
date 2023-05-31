@@ -119,10 +119,12 @@ For **Authentication and Authorization** purposes we'll be using OAuth to avoid 
     - [X] Ensure Mobile Optimization and test media queries
     - [X] Clean out redundancies and/or duplicate commmands 
     - [X] Debugging & sussin out errors/typos
-    - [] Get Index Table to sort by Highest Ranking as default
+    - [X] Test padding and media queries on different devices and browsers
+    - [X] Sign up other USERS and test the COMMENT Functionality (Reviews)
 - **Thursday**:
-    - [] Adjust Open Til Time to 12H format and include am/pm
     - [] BRANCH
+    - [] Get Index Table to sort by Highest Ranking as default
+    - [] Adjust Open Til Time to 12H format and include am/pm
     - [] Try to implement Google Maps API to site from new branch to try to get subway data
     - [X] Final Testing Phase
     - [X] Deploy
