@@ -23,12 +23,11 @@
                 <td style="font-size: 3vmin"><%= pizzeria.address %></td>
                 <td style="font-size: 3vmin"><%= pizzeria.vegan ? 'Yasss' : 'Nah' %></td>
                 <td> 
-                <% if (pizzeria.length) { %>
-                <% pizzeria.openTil.forEach(function(pizz) { %>
-                      <% pizz.openTil.toLocaleTimeString('en-US', { hour12: true }) %>
-                      <% }) %>
-                      <% } %>
-                    </td>
+                    <% if (pizzeria.length) { %>
+                    <% pizzeria.openTil.forEach((p) => { %>
+                    <% p.openTil.toLocaleTimeString('en-US', { hour12: true }) %>
+                    <% })} %>
+                </td>
                 
             </tr>
         </tbody>
