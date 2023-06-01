@@ -25,7 +25,7 @@
                 <td> 
                     <% if (pizzeria.length) { %>
                     <% pizzeria.openTil.forEach((p) => { %>
-                    <% p.openTil.toLocaleTimeString('en-US', { hour12: true }) %>
+                    <% p.toLocaleTimeString('en-US', { hour12: true }) %>
                     <% })} %>
                 </td>
                 
