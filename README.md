@@ -122,7 +122,7 @@ For **Authentication and Authorization** purposes we'll be using OAuth to avoid 
     - [X] Test padding and media queries on different devices and browsers
     - [X] Sign up other USERS and test the COMMENT Functionality (Reviews)
 - **Thursday**:
-    - [X] BRANCH
+    - [X] BRANCH for Edits
     - [] Get Index Table to sort by Highest Ranking as default
     - [] Adjust Open Til Time to 12H format and include am/pm
     - [] Try to implement Google Maps API to site from new branch to try to get subway data
@@ -137,10 +137,10 @@ For **Authentication and Authorization** purposes we'll be using OAuth to avoid 
 ***
 ### _**Credits**_
 
-##### **PLUGINS USED**
-##### Sorttable.js[Sorttable.js](https://www.kryogenix.org/code/browser/sorttable)
+#### **PLUGINS USED**
+##### [Sorttable.js](https://www.kryogenix.org/code/browser/sorttable)
 
-##### **IMAGES USED**
+#### **IMAGES USED**
 ##### Ren & Stimpy Gif: [Tenor](https://media.tenor.com/X2xUUHbZrXMAAAAC/pizza-party.gif)
 ##### Spongebob Krusty Krab Pizza Gif: [Tenor](https://media.tenor.com/-lohISybXxoAAAAC/spongebob-the-krusty-krab-pizza.gif)
 ##### Homer Simpson Gif: [Gifer](ttps://i.gifer.com/IPR.gif)
