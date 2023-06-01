@@ -30,9 +30,15 @@ const pizzeriaSchema = new Schema({
         enum: ['The Bronx', 'Brooklyn', 'Manhattan', 'Queens', 'Staten Island', 'Long Island', 'Westchester', 'Jers', 'Connecticut'],
         required: true
     },
-    address: String,
-    openTil: String,
-    vegan: Boolean,
+    address: {type: String,
+    required: true
+    },
+    openTil: {type: String,
+    required: true
+  },
+    vegan: {type: Boolean,
+    required: true
+    },
     reviews: [reviewSchema]
 }, {
     unique: true,
