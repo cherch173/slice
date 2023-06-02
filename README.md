@@ -6,7 +6,7 @@ _NYC's very own definitive Pizza Power Rankings_
 
 #### Written by Brian Cherchiglia
 #### Published by Cherch
-##### Created on 05/25/2024
+##### Created on 05/25/2023
 ***
 ***
 #### [**DEPLOYED APP**](https://slice.herokuapp.com/)
