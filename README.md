@@ -42,7 +42,7 @@ User Authentication will be achieved using **Google OAuth**.
 ## _**Getting Started**_
 ![Image](https://i.gifer.com/IPR.gif)
 
-The home page (INDEX) will be very important for simplistic design.
+The home page (PIZZERIAS/INDEX) will be very important for simplistic design.
 
 Using EJS Partials I'll embed links at the top of the each page to create a uniform & familiar layout as we navigate between our three branch directories:
 
@@ -50,7 +50,7 @@ Using EJS Partials I'll embed links at the top of the each page to create a unif
 - Pizzeria Details (Reviews)
 - New Pizzeria (New)
 
-Much like our mongoose-movies exercise, I plan to implement a user-based rating (**reviews**) system where we use a 1-5 scale to determine which pizzeria _is_ in fact the best in NYC. The numeric rating will be required: true, while text comments won't be required.
+Much like our mongoose-movies exercise, I plan to implement a user-based rating (**reviews**) system where we use a 1-5 scale to determine which pizzeria _is_ in fact the best in NYC. The numeric rating will be required: true, as will text comments ensuring a uniform rendering even if the review text is verbose.
 
 Through the **pizzeriaSchema**, USERS will be able to contribute to a small array of data that will be visible when they SELECT a Pizzeria:
 - name: String
