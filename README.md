@@ -9,7 +9,7 @@ _NYC's very own definitive Pizza Power Rankings_
 ##### Created on 05/25/2024
 ***
 ***
-#### [**GitHub Repo**]https://github.com/cherch173/slice)
+#### [**GitHub Repo**](https://github.com/cherch173/slice)
 #### [**Trello Board**](https://trello.com/invite/b/v3VAizMi/ATTI545a35c236d2a7c8f922f1c022bd94b30A3995FF/software-development-web-app-ios-app-android-app)
 ***
 ***
