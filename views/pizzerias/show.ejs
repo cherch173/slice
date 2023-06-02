@@ -23,7 +23,7 @@
                 <td style="font-size: 3vmin"><%= pizzeria.borough %></td>
                 <td style="font-size: 3vmin"><%= pizzeria.address %></td>
                 <td style="font-size: 3vmin"><%= pizzeria.vegan ? 'Yasss' : 'Nah' %></td>
-                <td> 
+                <td type="time-local"> 
                     <%= pizzeria.openTil.toLocaleString() %>
                 </td>
                 
@@ -31,8 +31,8 @@
         </tbody>
     </table>
 </section>
-
 <br>
+
 <!-- Ratings Table -->
 <table id="ratingsTable">
   <thead>
@@ -57,7 +57,6 @@
 <!-- REVIEWS FORM HTML -->
 <br><br>
 <wrapper style="text-align: left">
-
   <h3>Reviews</h3>
   <% if (user) { %>
     <form id="add-review-form" method="POST"
@@ -77,8 +76,8 @@
   <% } %>
   <br>
   </wrapper>
+
   <!-- THE FUNCTION needed to DISPLAY the pizzeria's REVIEWS-->
-  
   <% if (pizzeria.reviews.length) { %>
     <table>
     
@@ -88,7 +87,6 @@
         <th>DATE</th>
         <th>REVIEW</th>
         <th>RATING</th>
-
       </tr>
     </thead>
 
@@ -118,8 +116,8 @@
         </td>
       </tr>
     </tbody>
-
   </table>
+  
   <% } else { %>
     <h5>No Reviews Yet</h5>
   <% } %>

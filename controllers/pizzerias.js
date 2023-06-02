@@ -16,14 +16,12 @@ async function index(req, res) {
 async function show(req, res) {
     const pizzeria = await Pizzeria.findById(req.params.id);
     res.render('pizzerias/show', { title: 'Pizzeria Detail', pizzeria});
-  }   
+}   
 
 async function create(req, res) {
     // switches the vegan checkbox on and off
     // to yasss or nah
     req.body.vegan = !!req.body.vegan;
-    // for (let key in req.body) {
-    //     if (req.body[key] === '') delete req.body[key];
         try {
             const pizzeria = await Pizzeria.create(req.body);
             //REDIRECT now that we've CRUD'd Data
@@ -32,7 +30,6 @@ async function create(req, res) {
             console.log(err);
             res.render('pizzerias/new', { errorMsg: err.message})
         }
-    // }
 }
 
 function newPizzeria(req, res) {
